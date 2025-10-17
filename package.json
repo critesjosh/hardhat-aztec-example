@@ -16,6 +16,13 @@
   },
   "dependencies": {
     "@aztec/l1-contracts": "git+https://github.com/AztecProtocol/l1-contracts.git",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.3",
+    "@nomicfoundation/hardhat-keystore": "^3.0.1",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.1",
+    "@nomicfoundation/hardhat-node-test-runner": "^3.0.3",
+    "@nomicfoundation/hardhat-verify": "^3.0.3",
+    "@nomicfoundation/hardhat-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.2",
     "@openzeppelin/contracts": "5.4.0"
   }
 }
