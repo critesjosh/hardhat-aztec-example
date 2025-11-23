@@ -15,7 +15,7 @@
     "viem": "^2.38.2"
   },
   "dependencies": {
-    "@aztec/l1-contracts": "git+https://github.com/AztecProtocol/l1-contracts.git",
+    "@aztec/l1-contracts": "git+https://github.com/AztecProtocol/l1-contracts.git#v3.0.0-devnet.5",
     "@nomicfoundation/hardhat-ignition-viem": "^3.0.3",
     "@nomicfoundation/hardhat-keystore": "^3.0.1",
     "@nomicfoundation/hardhat-network-helpers": "^3.0.1",
