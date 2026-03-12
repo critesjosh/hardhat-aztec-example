@@ -3,19 +3,27 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "node -e \"require('fs').writeFileSync('node_modules/@aztec/l1-contracts/remappings.txt', '@oz/=node_modules/@openzeppelin/contracts/\\n@aztec/=node_modules/@aztec/l1-contracts/src/\\n')\""
+    "postinstall": "node -e \"require('fs').writeFileSync('node_modules/@aztec/l1-contracts/remappings.txt', '@aztec/=src/\\n@aztec-blob-lib/=src/core/libraries/rollup/\\n@oz/=node_modules/@openzeppelin/contracts/\\n')\""
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ignition": "^3.0.3",
     "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
     "@types/node": "^22.18.10",
     "forge-std": "github:foundry-rs/forge-std#v1.9.4",
-    "hardhat": "^3.0.7",
+    "hardhat": "^3.1.12",
     "typescript": "~5.8.0",
     "viem": "^2.38.2"
   },
   "dependencies": {
-    "@aztec/l1-contracts": "git+https://github.com/AztecProtocol/l1-contracts.git#v4.0.0-devnet.2-patch.1",
+    "@aztec/accounts": "^5.0.0-nightly.20260311",
+    "@aztec/aztec.js": "^5.0.0-nightly.20260311",
+    "@aztec/ethereum": "^5.0.0-nightly.20260311",
+    "@aztec/foundation": "^5.0.0-nightly.20260311",
+    "@aztec/l1-contracts": "git+https://github.com/AztecProtocol/l1-contracts.git#v5.0.0-nightly.20260311",
+    "@aztec/noir-contracts.js": "^5.0.0-nightly.20260311",
+    "@aztec/stdlib": "^5.0.0-nightly.20260311",
+    "@aztec/viem": "^2.38.2",
+    "@aztec/wallets": "^5.0.0-nightly.20260311",
     "@nomicfoundation/hardhat-ignition-viem": "^3.0.3",
     "@nomicfoundation/hardhat-keystore": "^3.0.1",
     "@nomicfoundation/hardhat-network-helpers": "^3.0.1",
@@ -23,6 +31,7 @@
     "@nomicfoundation/hardhat-verify": "^3.0.3",
     "@nomicfoundation/hardhat-viem": "^3.0.0",
     "@nomicfoundation/hardhat-viem-assertions": "^3.0.2",
-    "@openzeppelin/contracts": "5.4.0"
+    "@openzeppelin/contracts": "5.4.0",
+    "tsx": "^4.21.0"
   }
 }

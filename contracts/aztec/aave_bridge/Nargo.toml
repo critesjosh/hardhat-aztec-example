@@ -1,0 +1,2 @@
+[workspace]
+members = ["aave_bridge_contract", "aave_bridge_test"]
